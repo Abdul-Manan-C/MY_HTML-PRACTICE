@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: #f0f4f8;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #007BFF;
+            padding: 10px 20px;
+            color: #fff;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar img {
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            margin-left: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1em;
+            transition: color 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            background: #0056b3;
+        }
+
+        .navbar .login-button {
+            background: linear-gradient(135deg, #ffffff, #a2c2e3, #28a745);
+            color: #fff;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            animation: buttonAnimation 3s infinite alternate;
+        }
+
+        .navbar .login-button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        h1, h2, h5 {
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-top: 20px;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #007BFF;
+            margin: 10px 0;
+            animation: fadeIn 2s ease-out;
+        }
+
+        h5 {
+            font-size: 1.2em;
+            color: #555;
+            margin: 20px 0;
+            animation: fadeIn 2.5s ease-out;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            line-height: 1.6;
+            animation: fadeIn 3s ease-out;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: scaleUp 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes scaleUp {
+            from { transform: scale(0.95); }
+            to { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="https://png.pngtree.com/png-clipart/20210521/ourmid/pngtree-home-button-ui-ux-png-image_3308787.jpg" alt="Home Icon" onclick="window.location.href='/index.html'">
+        <ul>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/features.html">Features</a></li>
+            <li><a href="/app.html">Applications</a></li>
+            <li><a href="/HIW.html">How it Works</a></li>
+            <li><a href="/limt.html">Limitations</a></li>
+            <li><a href="/future.html">Future</a></li>
+            <li><a href="/concl.html">Conclusion</a></li>
+            <li><a href="/login.html" class="login-button">Login</a></li>
+        </ul>
+    </div>
+    <h1>ChatGPT</h1>
+    <h2>Welcome to ChatGPT blog by Manan.</h2>
+    <h5>What is ChatGPT?</h5>
+    <p>
+        So, ChatGPT is an advanced AI language model developed<br>
+        by OpenAI. It is based on the GPT-4 architecture,<br>
+        designed to generate human-like text. ChatGPT can<br>
+        understand and respond to a wide range of topics,<br>
+        making it versatile for various applications. It<br>
+        excels in language comprehension, context awareness,<br>
+        and generating natural responses. ChatGPT is widely<br>
+        used in education, content creation, programming<br>
+        assistance, customer support, and as a personal<br>
+        assistant. Despite its capabilities, it has limitations<br>
+        such as occasional inaccuracies and biases. Continuous<br>
+        improvements are being made to enhance its accuracy,<br>
+        safety, and overall usefulness. ChatGPT represents a<br>
+        significant advancement in AI technology, facilitating<br>
+        numerous practical applications and human-computer<br>
+        interactions.
+    </p>
+    
+    <script>
+        // Add any JavaScript for additional functionality here if needed
+    </script>
+</body>
+</html>

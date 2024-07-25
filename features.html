@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features Of ChatGPT</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            align-items: center;
+            background: #009688;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar img {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 2px solid #fff;
+            object-fit: cover;
+            cursor: pointer;
+            animation: pulse 3s infinite;
+            transition: box-shadow 0.5s ease;
+            margin-right: auto; /* Align home icon to the left */
+        }
+
+        .navbar img:hover {
+            box-shadow: 0 0 15px rgba(0, 150, 255, 0.6);
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 10px rgba(0, 150, 255, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(0, 150, 255, 0.6);
+            }
+            100% {
+                box-shadow: 0 0 10px rgba(0, 150, 255, 0.3);
+            }
+        }
+
+        .navbar ol {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            flex: 1;
+            justify-content: flex-end; /* Align links to the right */
+        }
+
+        .navbar ol li {
+            margin: 0 15px;
+        }
+
+        .navbar ol a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ol a:hover {
+            color: #cddc39;
+        }
+
+        /* Main content styling */
+        main {
+            margin-top: 60px; /* Adjust for the fixed navbar */
+            padding: 20px;
+            max-width: 1200px;
+            margin: 80px auto 20px auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #009688;
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        ul {
+            padding: 0;
+            margin: 20px auto;
+            max-width: 800px;
+            list-style-type: none;
+        }
+
+        ul li {
+            background: #fff;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease;
+        }
+
+        ul li:hover {
+            background: #e0f2f1;
+        }
+
+        form {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        textarea:focus {
+            border-color: #009688;
+            outline: none;
+        }
+
+        button {
+            background: linear-gradient(45deg, #009688, #00bcd4);
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background: linear-gradient(45deg, #00bcd4, #009688);
+            transform: scale(1.05);
+        }
+
+        a {
+            color: #009688;
+            text-decoration: none;
+            font-size: 1em;
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        a:hover {
+            color: #00796b;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="https://png.pngtree.com/png-clipart/20210521/ourmid/pngtree-home-button-ui-ux-png-image_3308787.jpg" alt="Home" onclick="window.location.href='/index.html'">
+        <ol>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/app.html">Applications</a></li>
+            <li><a href="/HIW.html">How it Works</a></li>
+            <li><a href="/limt.html">Limitations</a></li>
+            <li><a href="/future.html">Future</a></li>
+            <li><a href="/concl.html">Conclusion</a></li>
+            <li><a href="/login.html">Login</a></li>
+        </ol>
+    </div>
+    <main>
+        <h2>Features Of ChatGPT</h2>
+        <p>
+            Here is a list of features OpenAI offers through ChatGPT:
+            <ul>
+                <li>Language Understanding: ChatGPT can comprehend and respond to a wide variety of queries and topics.</li>
+                <li>Context Awareness: It remembers context within a conversation, making interactions more coherent.</li>
+                <li>Versatility: It can assist with writing, coding, answering questions, tutoring, and more.</li>
+                <li>Natural Responses: Generates text that mimics human conversation, making interactions feel natural.</li>
+                <li>Wide Knowledge Base: Trained on diverse datasets, allowing it to provide information on many subjects.</li>
+            </ul>
+            <form>
+                <label for="textInput">Give us Suggestions:</label><br><br>
+                <textarea id="textInput" name="textInput" rows="7" cols="50" placeholder="Start typing..."></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </p>
+        <a href="/index.html">Goto home page</a>
+    </main>
+</body>
+</html>
